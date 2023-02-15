@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container-fluid thor">
+    
+         <div class="wis">Registration Form</div>
+            
+            <!-- <form action=" action_page.php" id="form"> -->
+            <div class="section1">
+            
+            <div class="body1">
+
+        <div class="thrill">
+        <label for="fname" class="goldberg">First Name</label>
+       <input type="text" id="fname" class="dude" placeholder= "first name" ><br>
+        <p id="call1" style="color:red;"></p>
+        </div>
+
+        <div class="thrill">
+        <label for="lname" class="goldberg">Last Name</label>
+         <input type="text" id="lname"  class="dude" placeholder="Last Name"><br>
+         <p id="call2" style="color:red"></p>
+        </div>
+
+        <div class="thrill">
+        <label for="email" class="goldberg">Email</label>
+         <input type="text" id="ename"  class="dude"  placeholder="email address"><br>
+         <p id="call3" style="color:red"></p>
+        </div>
+
+        <div class="thrill">
+        <label for="date" class="goldberg">Date</label>
+          <input type="date" id="dname"  class="dude" ><br>
+          <p id="call4" style="color:red"></p>
+        </div>
+
+        <div class="thrill">
+
+            <label for="" class="goldberg">Gender</label>
+            <input type="radio" id="gender1" class="r2">
+            <label for="radio" class="r1" class="goldberg">Female</label>
+            
+            <input type="radio" id="gender2" class="r2">
+            <label for="radio" class="r1" class="goldberg">Male</label>
+            <p id="call13" style="color: red;"></p>
+            
+          </div>
+
+
+        <div class="thrill">
+         <label for="pname" class="goldberg">Phone Number</label>
+        <input type="number" id="pname"  class="dude" placeholder="mobile number"><br>
+        <p id="call5" style="color:red"></p>
+        </div>
+
+        <div class="thrill">
+        <label for="passname" class="goldberg">Password</label>
+         <input type="password" id="passname"  class="dude" placeholder="password"><br>
+         <p id="call6" style="color:red"></p>
+        </div>
+
+        <div class="thrill">
+         <label for="passname2"class="goldberg">Confirm Password</label>
+         <input type="password" id="password2"  class="dude" placeholder="confirm password"><br>
+         <p id="call12" style="color:red"></p>
+         </div>
+    
+
+         <div class="thrill">
+            <input type="checkbox" id="termsc" class="doramon">
+            <label for="" class="goldberg">Terms & conditions</label>
+            <p id="call14" style="color: red;"></p>
+         </div>
+
+         <div class="thrill">
+            <input type="submit" id="submit" class="buttoning" onclick="frontp()">
+         </div>
+
+    </div>
+   
+    </div>
+        
+    </div>
+
+     <script>
+     function frontp() {
+        let x=false;
+
+        let n = document.getElementById("fname").value
+        let m=/^[A-Za-z]+$/;
+        if(n== ""){
+            document.getElementById("call1").innerHTML= "Enter the name";
+        }
+        else if(!m.test(n)){
+            document.getElementById("call1").innerHTML= "Enter the valid username";
+        }
+        else{
+            document.getElementById("call1").innerHTML= "";
+            y1=true;
+        }
+
+
+
+        let a = document.getElementById("lname").value
+        let b=/^[A-Za-z]+$/;
+        if(a== ""){
+            document.getElementById("call2").innerHTML= "Enter the name";
+        }
+        else if(!b.test(a)){
+            document.getElementById("call2").innerHTML= "Enter the valid username";
+        }
+        else{
+            document.getElementById("call2").innerHTML= "";
+            y2=true;
+        }
+
+
+
+        let c = document.getElementById("ename").value
+        let d=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if(c== ""){
+            document.getElementById("call3").innerHTML= "Enter the email id";
+        }
+        else if(!d.test(c)){
+            document.getElementById("call3").innerHTML= "Enter the valid email";
+        }
+        else{
+            document.getElementById("call3").innerHTML= "";
+            y3=true;
+        }
+
+
+       let da=document.getElementById('dname').value
+       if(da==""){
+       document.getElementById('call4').innerHTML="please select date of birth"
+       }
+       else{
+       document.getElementById('call4').innerHTML=""
+       y4=true;
+       }
+
+
+
+        let e = document.getElementById("pname").value
+        let f=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+        if(e== ""){
+            document.getElementById("call5").innerHTML= "Enter the phone number";
+        }
+        else if(!f.test(e)){
+            document.getElementById("call5").innerHTML= "Enter the valid phone number";
+        }
+        else{
+            document.getElementById("call5").innerHTML= "";
+            y5=true;
+        }
+
+
+
+        let g = document.getElementById("passname").value
+        let h=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+        if(g== ""){
+            document.getElementById("call6").innerHTML= "Enter the password";
+        }
+        else if(!h.test(g) ){
+            document.getElementById("call6").innerHTML= "Enter the valid password";
+        }
+        else{
+            document.getElementById("call6").innerHTML= "";
+            y6= true;
+        }
+
+
+
+        let z = document.getElementById("password2").value
+        if(z== ""){
+            document.getElementById("call12").innerHTML= "Enter the password";
+        }
+        else if(z !== g){
+            document.getElementById("call12").innerHTML= "password not matched";
+        }
+        else{
+            document.getElementById("call12").innerHTML= "";
+            y7=true;
+        }
+
+       
+        let male = document.getElementById("gender1").checked;
+        let female = document.getElementById("gender2").checked;
+
+        if (male||female) {
+            document.getElementById("call13").innerHTML=""
+            y8=true;
+         }
+         else{
+            document.getElementById("call13").innerHTML="plase select a gender"
+         }
+
+
+        let my = document.getElementById("termsc").checked;
+
+        if(my){
+            document.getElementById("call14").innerHTML=""
+            y9=true;
+    
+        }
+        else{
+            document.getElementById("call14").innerHTML="please accept the terms & conditions"
+        }
+
+          
+        if (y1&&y2&&y3&&y4&&y5&&y6&&y7&&y8&&y9) {
+             alert('the form has been submitted successfully')
+        }
+        else {
+             alert('please correct the error')
+        }
+     }
+
+     </script>
+    </body>
+    </html>

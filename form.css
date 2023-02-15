@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+.thor{
+    background-image: url(../relax/building.jpg);
+    z-index: -4;
+    opacity: 600px;
+    
+}
+
+.wis{
+    font-size: 40px;
+    text-align: center;
+    color:crimson
+    
+}
+/* .container-fluid{
+    background-image: url(../relax/nature\ image.jpg);
+    opacity: ;
+} */
+
+
+.section1{
+    
+    display:flex;
+    justify-content: center;
+    
+
+    
+    
+}
+
+.body1{
+    
+    
+    font-size: 20px;
+    /* background-color:rgb(87, 87, 126); */
+    
+    width:600px;
+    padding:15px;
+
+    
+}
+
+.thrill{
+    line-height: 30px;
+    padding: 10px;
+    
+}
+.goldberg{
+    /* color:rgb(132, 207, 33) */
+    color: blue;
+}
+
+
+.r1{
+    float: right;
+    color: blue;
+}
+.r2{
+    margin-top: 13px;
+    color: blue;
+    width: 10%;
+    height: 12px;
+
+}
+
+
+
+input{
+    float:right;
+    /* margin-right: 80px; */
+    border-radius: 5px;
+    width:300px;
+    
+}
+.buttoning{
+    background-color: blue;
+    border: none;
+    font-size: 20px;
+    width:100%;
+    padding:5px;
+    margin-top: 30px;
+}
+.buttoning:hover{
+   background-color: crimson;
+}
+.dude{
+    font-size: 15px;
+    background-color: rgb(19, 20, 20);
+    border-radius: 3px;
+    border: 2px solid black;
+    color: rgb(145, 115, 115)
+}
+:hover.dude{
+    background-color: rgb(26, 34, 102);
+}
+
+
+.doramon{
+    margin-top: 20px;
+    width: 10%;
+    height: 15px;
+    
+}
