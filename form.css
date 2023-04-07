@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .thor{
-    background-image: url(../relax/building.jpg);
+    background-image: url(./images/building.jpg);
     z-index: -4;
     opacity: 600px;
     
@@ -49,7 +49,7 @@
 }
 .goldberg{
     /* color:rgb(132, 207, 33) */
-    color: blue;
+    color: rgb(240, 240, 47);
 }
 
 
